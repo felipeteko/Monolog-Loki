@@ -25,10 +25,12 @@ $logger->pushHandler(new LokiHandler(
 $logger->info('Log enviado directamente a Grafana Loki');
 ```
 
-## Configuración recomendada en Grafana
+## Tests
 
-- Crea una API Key con permiso de escritura para **Loki**.
-- Ve a **Explore** y usa la consulta `{job="php"}` para ver los logs.
+```bash
+composer install
+vendor/bin/phpunit tests
+```
 
 ## Licencia
 

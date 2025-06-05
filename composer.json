@@ -1,5 +1,5 @@
 {
-  "name": "tekoestudio/monolog-loki",
+  "name": "felipeteko/monolog-loki",
   "description": "Monolog handler to send logs directly to Grafana Loki",
   "type": "library",
   "license": "MIT",
@@ -11,5 +11,17 @@
   "require": {
     "monolog/monolog": "^2.0 || ^3.0"
   },
-  "minimum-stability": "stable"
+  "require-dev": {
+    "pestphp/pest": "^2.0",
+    "phpunit/phpunit": "^9.5 || ^10.0"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest"
+  }
 }
