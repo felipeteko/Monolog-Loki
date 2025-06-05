@@ -15,7 +15,6 @@
     "pestphp/pest": "^2.0",
     "phpunit/phpunit": "^9.5 || ^10.0"
   },
-  "minimum-stability": "stable",
   "config": {
     "allow-plugins": {
       "pestphp/pest-plugin": true
