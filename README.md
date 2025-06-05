@@ -16,9 +16,9 @@ use TekoEstudio\Loki\LokiHandler;
 
 $logger = new Logger('app');
 $logger->pushHandler(new LokiHandler(
-    'https://logs-prod3.grafana.net',
-    'TU_TENANT_ID',
-    'TU_API_KEY',
+    'LOKI_URL',
+    'LOKI_USERNAME',
+    'LOKI_API_KEY',
     ['env' => 'prod']
 ));
 
@@ -29,7 +29,7 @@ $logger->info('Log enviado directamente a Grafana Loki');
 
 ```bash
 composer install
-vendor/bin/phpunit tests
+composer test
 ```
 
 ## Licencia
