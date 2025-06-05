@@ -5,7 +5,7 @@ Este paquete te permite enviar logs directamente desde PHP a Grafana Loki usando
 ## Instalación
 
 ```bash
-composer require tekoestudio/monolog-loki
+composer require felipeteko/monolog-loki
 ```
 
 ## Uso
