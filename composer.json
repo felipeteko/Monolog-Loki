@@ -1,0 +1,15 @@
+{
+  "name": "tekoestudio/monolog-loki",
+  "description": "Monolog handler to send logs directly to Grafana Loki",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "TekoEstudio\\Loki\\": "src/"
+    }
+  },
+  "require": {
+    "monolog/monolog": "^2.0 || ^3.0"
+  },
+  "minimum-stability": "stable"
+}
